@@ -60,7 +60,6 @@ document.getElementById('playBtn').onclick = resumeOrStart;
 document.getElementById('quitBtn').onclick = quitToMenu;
 document.getElementById('restartBtn').onclick = restartLevel;
 document.getElementById('menuBtn').onclick = gotoMenu;
-document.getElementById('retoursettingsBtn').onclick = gotoMenu
   
 /* Level buttons */
 document.querySelectorAll('.level').forEach(b => {
