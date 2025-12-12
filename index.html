@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Richtig oder Falsch: Migros Produkte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Richtig oder Falsch: Migros Produkte</h1>
+    </header>
+
+    <section id="menu" class="card">
+      <button class="btn primary" id="playBtn">Spielen</button>
+      <button class="btn" id="levelsBtn">Levels</button>
+      <button class="btn" id="settingsBtn">Einstellungen</button>
+    </section>
+
+    <section id="levels" class="card hidden">
+      <h2>Level auswählen</h2>
+      <div class="row">
+        <button class="btn level" data-level="1">Einfach</button>
+        <button class="btn level" data-level="2">Mittlere</button>
+        <button class="btn level" data-level="3">Schwierig</button>
+      </div>
+    </section>
+
+    <section id="settings" class="card hidden">
+      <h2>Einstellungen</h2>
+      <label class="checkbox">
+        <input type="checkbox" id="musicToggle" />
+        Hintergrundmusik
+      </label>
+      <p class="muted">Die Musik ist nur ein espace réservé; remplace <code>assets/music/bg.mp3</code> si tu veux.</p>
+    </section>
+
+    <section id="game" class="card hidden">
+      <div class="topbar">
+        <div id="timer" class="timer">--s</div>
+        <div id="progress" class="muted">0 / 0</div>
+      </div>
+
+      <h2 id="question" class="question">Frage...</h2>
+
+      <div class="answers">
+        <button id="richtigBtn" class="answer correct">Richtig</button>
+        <button id="falschBtn" class="answer wrong">Falsch</button>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="quitBtn">Beenden</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Ergebnis</h2>
+      <div id="scoreBig" class="scoreBig">--%</div>
+      <div id="details" class="muted"></div>
+      <div class="row">
+        <button class="btn" id="restartBtn">Nochmal spielen</button>
+        <button class="btn" id="menuBtn">Zum Menü</button>
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      <small>Spiel auf GitHub Pages: Einfach die Dateien in ein Repo pushen und Pages aktivieren.</small>
+    </footer>
+  </main>
+
+  <audio id="bgmusic" loop>
+    <source src="assets/music/bg.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
