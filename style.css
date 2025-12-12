@@ -71,3 +71,13 @@ body{
   .timer{font-size:28px}
   .header h1{font-size:20px}
 }
+
+#menu {
+  display: flex;
+  flex-direction: column;      /* place les boutons en colonne */
+  justify-content: center;     /* centre verticalement */
+  align-items: center;         /* centre horizontalement */
+  height: 100vh;               /* prend toute la hauteur de l'écran */
+  gap: 20px;                   /* espace entre les boutons */
+}
+
